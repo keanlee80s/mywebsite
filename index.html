@@ -1,79 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>The Google Homepage</title>
-  <script src="scripts/jquery.js"></script>
-  <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-  
-  <div class="container">
-    
-    <div class="header">
-    
-      <ul class="nav">
-    
-        <li><a href="#">+Nate</a></li>
-        <li><a href="#">Mail</a></li>
-        <li><a href="#">Images</a></li>
-        <li><a class="apps" href="#"></a></li>
-        <li><a class="bell" href="#"></a></li>
-        <li><a class="share" href="#">Share</a></li>
-        <li><a class="face" href="#"></a></li>
-    
-      </ul>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<div class = 'links'>
+			<ul class= 'nav-right'>
 
-    </div>
-  <div class="cf"></div>
-    <div class="google-search">
-      
-      <center>
-      <img src="images/google.png" alt="google">
-      <form action="POST">
-          
-          <div class="search-bar">
-            <div class="mic"><img src="images/mic.gif" alt=""></div>
-            <input type="text" name="search"><br>
-          </div>
+		 <li class = 'nav-list'>
+			<a class='top-right' href='#'>
+			 	<img width='80px' height='25px' src='https://developers.google.com/identity/toolkit/images/sign_in_button.png'>
+			</a>
+		 </li>
+		 		
+		 <li class = 'nav-list'>
+		 	<a class='top-right' href='#'>
+		 		<img width='25px' height='25px' src='http://www.download3k.com/article_images/0/384/thumb_7_fc5baf86b725ec5f2b536d32725f24e3.png'>
+		 	</a>
+		 </li>
+		 <li class='nav-list'>
+		 	<a class='top-right' href='#'>
+		 		<img width='25px' height='25px' src='http://flatfrogblog.com/wp-content/uploads/2014/01/app-launcher-150x150.png'>
+		 	</a>
+		 </li>
+		 <li class='nav-list'>
+		 	<a class='top-right' href='#'>Images</a>
+		 </li>
+		 <li class='nav-list'><a class='top-right' href='#'>Mail</a></li>
+		</ul>
+		</div>
+		<div class= 'logo'>
+			<img class= 'logo-image' src='http://www.thelogofactory.com/wp-content/uploads/2015/09/fixed-google-logo-font.png' height='300px' width='700px'>
+		</div>
+		<div class= 'search-elements'> 
+		<form action="" method="">		    
+		<input type="search" size='70'><br>	    	
+		<button class= 'search-button'><span>Google Search</span></button>
+		<button class='search-button'><span>I'm Feeling Lucky</span></button>
+	</form>
+		</div>
+		<footer>
+			<ul class = 'left-footer'>
+				<li><a href="#">Advertising</a></li>
+				<li><a href="#">Business</a></li>
+				<li><a href="#">About</a></li>
+				</ul>
+				<ul class = 'right-footer'>
+				<li><a href="#">Privacy & Terms</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Use Google.com</a></li>
+			
+			</ul>
+		</footer>
 
-          <div class="cf"></div>
-        
-        <input class="search" type="submit" value="Google Search">
-        <input class="lucky" type="submit" value="I'm Feeling Lucky"> 
-      
-      </form>
-      </center>
-    
-    </div>
-    
-    <footer>
-
-      <ul class="footer-left">
-    
-        <li><a class="name" href="#">Advertising</a></li>
-        <li><a class="mail" href="#">Business</a></li>
-        <li><a class="images" href="#">About</a></li>
-
-      </ul>
-
-      <ul class="footer-right">
-
-        <li><a href="#">Privacy &amp; Terms</a></li>
-        <li><a href="#">Settings</a></li>
-
-      </ul>
-
-    </footer>
-
-  </div>
-  
-  <script type="text/javascript">
-  $('input[type=text]').focus(function(){
-    $('.mic').css('border-color', '#4285F4');
-  }).blur(function(){
-    $('.mic').css('border-color', '#DCDCDC');
-  });
-</script>
-
-</body>
+	</body>	
 </html>
